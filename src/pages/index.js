@@ -29,7 +29,7 @@ const IndexPage = () => (
       <h1>Menu</h1>
     </Container>
     <Text>
-      <p>Welcome to your new Gatsby site.</p>
+      <p>Hello</p>
     </Text>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
