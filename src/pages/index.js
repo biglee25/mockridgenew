@@ -12,6 +12,7 @@ const Container = styled.div`
   h1 {
     font-family: Anton;
     font-size: 5rem;
+    text-transform: uppercase;
   }
 `;
 
