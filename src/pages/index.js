@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
 
-import Image from "../components/image";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -24,24 +22,15 @@ const Text = styled.div`
   }
 `;
 
-const IndexPage = () => (
-  <div>
-    <Container>
-      <h1>Menu</h1>
-    </Container>
-    <Text>
-      <p>Hello</p>
-    </Text>
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+export default function Home() {
+  return (
+    <div>
+      <Container>
+        <h1>Hello Gatsby!</h1>
+      </Container>
+      <Text>
+        <p>What a world.</p>
+      </Text>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-  </div>
-);
-
-export default IndexPage;
+  );
+}
