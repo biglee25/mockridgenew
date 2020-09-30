@@ -6,19 +6,11 @@ const Container = styled.div`
   background: black;
   color: white;
   padding: 2rem 1.5rem;
+  text-align: center;
 
   h1 {
-    font-family: Anton;
-    font-size: 5rem;
     text-transform: uppercase;
-  }
-`;
-
-const Text = styled.div`
-  p {
-    font-family: Roboto;
-    font-size: 1rem;
-    color: red;
+    font-family: Anton;
   }
 `;
 
@@ -28,9 +20,7 @@ export default function Home() {
       <Container>
         <h1>Hello Gatsby!</h1>
       </Container>
-      <Text>
-        <p>What a world.</p>
-      </Text>
+      <p>What a world.</p>
     </div>
   );
 }
