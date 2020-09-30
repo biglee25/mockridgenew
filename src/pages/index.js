@@ -7,7 +7,7 @@ import styled from "styled-components";
 const Container = styled.div`
   background: black;
   color: white;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
 
   h1 {
     font-family: Anton;
