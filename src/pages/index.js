@@ -24,7 +24,6 @@ const Text = styled.div`
 `;
 
 const IndexPage = () => (
-<<<<<<< HEAD
   <div>
     <Container>
       <h1>Menu</h1>
@@ -32,12 +31,10 @@ const IndexPage = () => (
     <Text>
       <p>Hello</p>
     </Text>
-=======
   <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
->>>>>>> cd508b051f7678f2264fce538ad3fc0e1c0d4888
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
