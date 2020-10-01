@@ -9,9 +9,13 @@ const Container = styled.div`
   text-align: center;
 
   h1 {
+    font-family: "Anton";
     text-transform: uppercase;
-    font-family: Anton;
   }
+`;
+
+const Text = styled.p`
+  font-family: "Roboto";
 `;
 
 export default function Home() {
@@ -20,7 +24,9 @@ export default function Home() {
       <Container>
         <h1>Hello Gatsby!</h1>
       </Container>
-      <p>What a world.</p>
+      <Text>
+        <p>What a world.</p>
+      </Text>
     </div>
   );
 }
