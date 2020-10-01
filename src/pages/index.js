@@ -1,12 +1,20 @@
 import React from "react";
 
 import styled from "styled-components";
+import Navbar from "../components/navbar";
+
+const Global = styled.div`
+  body {
+    overflow-x: hidden;
+  }
+`;
 
 const Container = styled.div`
-  background: black;
+  background: grey;
   color: white;
   padding: 2rem 1.5rem;
   text-align: center;
+  height: 100vh;
 
   h1 {
     font-family: "Anton";
@@ -21,12 +29,15 @@ const Text = styled.p`
 export default function Home() {
   return (
     <div>
-      <Container>
-        <h1>Hello Gatsby!</h1>
-      </Container>
-      <Text>
-        <p>What a world.</p>
-      </Text>
+      <Global>
+        <Navbar />
+        <Container>
+          <h1>Hello Gatsby!</h1>
+          <Text>
+            <p>What a world.</p>
+          </Text>
+        </Container>
+      </Global>
     </div>
   );
 }
