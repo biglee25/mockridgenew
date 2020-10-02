@@ -21,13 +21,15 @@ const Navbar = styled.div`
 
 const Hamburger = styled.button`
   z-index: 5000;
+  background: black;
+  border: 0;
 `;
 
 const Menu = styled.div`
   position: absolute;
   top: 0;
   right: 100%;
-  min-width: 50%;
+  min-width: 70%;
   height: 100%;
   background: #333;
   color: white;
@@ -59,7 +61,7 @@ export default function Nav() {
   return (
     <div>
       <Navbar>
-        <img src={logo}></img>
+        <img src={logo} width="70%"></img>
         <Hamburger>
           <button onClick={() => showNav(!nav)}>
             <FontAwesomeIcon icon={faBars} size="3x" className="icon" />
