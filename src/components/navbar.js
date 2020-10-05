@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "../images/logo.svg";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Squash as Hamburger } from "hamburger-react";
 
 const Navbar = styled.div`
   max-width: 100%;
@@ -17,19 +15,14 @@ const Navbar = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`;
-
-const Hamburger = styled.button`
-  z-index: 5000;
-  background: black;
-  border: 0;
+  z-index: 3;
 `;
 
 const Menu = styled.div`
   position: absolute;
   top: 0;
-  right: 100%;
-  min-width: 70%;
+  right: 0;
+  min-width: 60%;
   height: 100%;
   background: #333;
   color: white;
@@ -38,8 +31,8 @@ const Menu = styled.div`
   align-items: center;
   justify-content: center;
   transition: 0.4s ease-out;
-  transform: ${({ nav }) => (nav ? "translateX(100%)" : "translateX(0)")};
-  z-index: 1;
+  transform: ${({ nav }) => (nav ? "translateX(0)" : "translateX(100%)")};
+  z-index: 2;
 
   ul {
     text-transform: uppercase;
@@ -55,22 +48,27 @@ const Menu = styled.div`
   }
 `;
 
+const Icon = styled.div`
+  position: relative;
+  top: 50%;
+  right: 0;
+  z-index: 10000;
+`;
+
 export default function Nav() {
   const [nav, showNav] = useState(false);
 
   return (
     <div>
       <Navbar>
-        <img src={logo} width="70%"></img>
-        <Hamburger>
-          <button onClick={() => showNav(!nav)}>
-            <FontAwesomeIcon icon={faBars} size="3x" className="icon" />
-          </button>
-        </Hamburger>
+        <img src={logo} width="50%" alt="logo"></img>
+        <a onClick={() => showNav(!nav)}>
+          <Icon>
+            <Hamburger direction="right" color="#fff" />
+          </Icon>
+        </a>
       </Navbar>
       <Menu nav={nav}>
-        {/*           <button onClick={() => showNav(!nav)}>Close</button>
-         */}{" "}
         <ul>
           <li>One</li>
           <li>Two</li>
