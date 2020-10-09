@@ -4,7 +4,7 @@ import logo from "../images/logo.svg";
 import { Squash as Hamburger } from "hamburger-react";
 
 const Navbar = styled.div`
-  max-width: 100%;
+  overflow-x: hidden;
   height: auto;
   top: 0;
   left: 0;
@@ -23,6 +23,7 @@ const Menu = styled.div`
   top: 0;
   right: 0;
   min-width: 60%;
+  overflow-x: hidden;
   height: 100%;
   background: #333;
   color: white;
@@ -67,14 +68,14 @@ export default function Nav() {
             <Hamburger direction="right" color="#fff" />
           </Icon>
         </a>
+        <Menu nav={nav}>
+          <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+          </ul>
+        </Menu>
       </Navbar>
-      <Menu nav={nav}>
-        <ul>
-          <li>One</li>
-          <li>Two</li>
-          <li>Three</li>
-        </ul>
-      </Menu>
     </div>
   );
 }

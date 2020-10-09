@@ -9,7 +9,7 @@ const Container = styled.div`
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow-x: hidden;
 
@@ -26,8 +26,8 @@ const Text = styled.p`
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <Container>
+        <Navbar />
         <h1>Hello Gatsby!</h1>
         <Text>
           <p>What a world.</p>

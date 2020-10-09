@@ -21,6 +21,7 @@
     "gatsby-plugin-sharp": "^2.6.37",
     "gatsby-plugin-styled-components": "^3.3.12",
     "gatsby-source-filesystem": "^2.3.31",
+    "gatsby-source-stripe": "^3.1.1",
     "gatsby-transformer-sharp": "^2.5.16",
     "hamburger-react": "^2.2.0",
     "prop-types": "^15.7.2",
